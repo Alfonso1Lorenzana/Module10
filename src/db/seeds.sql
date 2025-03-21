@@ -1,4 +1,4 @@
-INSERT INTO employee_tracker (movie_name)
+INSERT INTO department (name)
 VALUES ('Lion King'),
        ('The Godfather'),
        ('West Side Story'),
