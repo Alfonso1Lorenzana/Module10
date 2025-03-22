@@ -1,8 +1,10 @@
 import { dbPool, connect2Db } from "./connection.js";
 import { Role } from "../types.js";
 
+// Connecting to Database
 await connect2Db();
 
+// Notice, that we need to make this ASYNC because we are waiting for the input of the user
 class RoleService {
   async getRoles(): Promise<Role[]> {
     const sql = `
@@ -21,6 +23,8 @@ class RoleService {
       throw err;
     }
   }
+
+  // Again, all of what needs to be looked at which is either addRole or getRoles
   async addRole(
     title: string,
     salary: string,

@@ -1,10 +1,13 @@
 import { dbPool, connect2Db } from "./connection.js";
 import { Employee } from "../types.js";
 
+// Connecting to Database
 await connect2Db();
 
 class EmployeeService {
 
+  // Either trying to getEmployees or addEmployees, it needs to be ASYNC call back 
+  // Because we are waiting for the user's input
   async getEmployees(): Promise<Employee[]> {
     const sql = `
     SELECT 
@@ -25,6 +28,8 @@ class EmployeeService {
       ON memp.id = emp.manager_id;
   `;
 try {
+      // if it has a result return it
+      // if not catch an error
       const result = await dbPool.query(sql);
       return result.rows;
     } catch (err) {
