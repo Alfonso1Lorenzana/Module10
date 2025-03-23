@@ -17,6 +17,10 @@ will be running it locally. The .env here has all of the DB credentials.
 It's needs to run as follows: ```node dist/index.js```
 In Visual Studio
 
+In there will be where the ```user_of_this_product``` inputs his/her information.
+Screencastify demo: 
+
+
 
 
 

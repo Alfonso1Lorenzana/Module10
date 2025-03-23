@@ -17,8 +17,10 @@ values ('Salesperson', 10000, 1),
 
 
 insert into employee (first_name, last_name, role_id, manager_id)
-values ('Alfonso', 'Alfonso', 3, null),
+values ('Alfonso', 'Rafter', 3, null),
 ('Guru', 'Raj', 2, 1),
-('Cheney', 'Marco', 1, null);
+('Cheney', 'Marco', 1, null),
+('Bob', 'Marley', 3, 2),
+('Juan', 'Tamad', 3, null);
 
 
