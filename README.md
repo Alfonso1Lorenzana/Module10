@@ -14,6 +14,9 @@ I put the services, in a ```connection.ts``` which will populate the DATABASE, w
 Also, there is a ```.gitignore``` to especially ignore node_modules since whomever runs this application,
 will be running it locally. The .env here has all of the DB credentials.
 
+It's needs to run as follows: ```node dist/index.js```
+In Visual Studio
+
 
 
 
